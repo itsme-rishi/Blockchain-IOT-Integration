@@ -3,6 +3,7 @@ We are using HyperLedger-Fabric to build the network
 followe these steps to install the pre-requisites.
 ---------------------------------------------------------
 For MAC
+---------------------------------------------------------
 Homebrew¶
 For macOS, we recommend using Homebrew to manage the prereqs.
 
@@ -56,9 +57,8 @@ Optional: Install the latest version of jq if it is not already installed (only 
 brew install jq
 jq --version # => jq-1.6
 
----------------------------------------------------------
-
 FOR LINUX
+---------------------------------------------------------
 Linux (Ubuntu/Debian based distro)¶
 Prerequisites: git, cURL, Docker
 
@@ -82,8 +82,8 @@ Optional: Install the latest version of Go (only required if you will be writing
 JQ¶
 Optional: Install the latest version of jq (only required for the tutorials related to channel configuration transactions).
 
----------------------------------------------------------
 For Windows
+---------------------------------------------------------
 Docker¶
 Install the latest version of Docker Desktop if it is not already installed.
 
@@ -111,8 +111,9 @@ You can check the setting of these parameters with the following commands:
 git config --get core.autocrlf
 git config --get core.longpaths
 These output from these commands should be false and true respectively.
----------------------------------------------------------
+
 Pulling Github Repo
+---------------------------------------------------------
 A working directory is required - for example, Go Developers use the $HOME/go/src/github.com/<your_github_userid> directory.  This is a Golang Community recommendation for Go projects.
 
 mkdir -p $HOME/go/src/github.com/<your_github_userid>
@@ -132,6 +133,8 @@ Usage: ./install-fabric.sh [-f|--fabric-version <arg>] [-c|--ca-version <arg>] <
 
 now pull Our HLF-repo
 git clone --single-branch --branch master https://github.com/subrat2004/iot-blockchain-integration.git
+
+Setting up the network
 ---------------------------------------------------------
 - fabric-sample two organization test-network setup with two peers, ordering service,
   and 2 certificate authorities, with the state database using couchdb
