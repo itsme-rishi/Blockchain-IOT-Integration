@@ -64,17 +64,17 @@ Prerequisites: git, cURL, Docker
 
 sudo apt-get install git curl docker-compose -y
 
-# Make sure the Docker daemon is running.
+- Make sure the Docker daemon is running.
 sudo systemctl start docker
 
-# Add your user to the Docker group.
+- Add your user to the Docker group.
 sudo usermod -a -G docker <username>
 
-# Check version numbers  
+- Check version numbers  
 docker --version
 docker-compose --version
 
-# Optional: If you want the Docker daemon to start when the system starts, use the following:
+- Optional: If you want the Docker daemon to start when the system starts, use the following:
 sudo systemctl enable docker
 Go¶
 Optional: Install the latest version of Go (only required if you will be writing Go chaincode or SDK applications).
